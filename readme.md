@@ -10,10 +10,10 @@
 
 # DOCUMENTATION
 ## Introduction
-Basé sur Laravel , testé avec PHP 7.0 en local.
-Le numéro de version de Laravel est dans composer.lock :
-            "name": "laravel/framework",
-            "version": "v5.2.20",
+Testé avec PHP 7.0 en local.
+Le numéro de version de Laravel est dans composer.lock (ligne 310) :
+ - "name": "laravel/framework",
+ - "version": "v5.2.20",
 
 ## Installation en local
 
