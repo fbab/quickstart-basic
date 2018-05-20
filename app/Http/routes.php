@@ -12,8 +12,8 @@
 */
 
 use App\Task;
-use App\User; // TODO
-use App\Http\UserController; // TODO
+use App\Course; // TODO
+// use App\Http\UserController; // TODO
 use Illuminate\Http\Request;
 
 Route::group(['middleware' => ['web']], function () {
@@ -21,8 +21,18 @@ Route::group(['middleware' => ['web']], function () {
      /**
      * Show User Dashboard by using a controller
      */
-    Route::get('/admin', 'UserController@index');
+    // Route::get('/admin', 'UserController@index');
 
+     
+    /**
+     * Show Course Dashboard
+     */
+    Route::get('/courses', function () {
+        return view('courses', [
+            'courses' => Course::orderBy('created_at', 'asc')->get()
+        ]);
+    });
+     
     
     /**
      * Show Task Dashboard
