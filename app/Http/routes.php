@@ -12,9 +12,18 @@
 */
 
 use App\Task;
+use App\User; // TODO
+use App\Http\UserController; // TODO
 use Illuminate\Http\Request;
 
 Route::group(['middleware' => ['web']], function () {
+
+     /**
+     * Show User Dashboard by using a controller
+     */
+    Route::get('/admin', 'UserController@index');
+
+    
     /**
      * Show Task Dashboard
      */
