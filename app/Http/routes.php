@@ -42,7 +42,21 @@ Route::group(['middleware' => ['web']], function () {
             'tasks' => Task::orderBy('created_at', 'asc')->get()
         ]);
     });
+     
+     
+     /**
+     * Add New Course
+     */
+    Route::post('/course', function (Request $request) {
 
+        $task = new Course;
+        $task->name = $request->name;
+        $task->save();
+
+        return redirect('/');
+    });
+     
+     
     /**
      * Add New Task
      */
@@ -72,4 +86,15 @@ Route::group(['middleware' => ['web']], function () {
 
         return redirect('/');
     });
+
+    /**
+     * Delete Course
+     */
+    Route::delete('/course/{id}', function ($id) {
+        Task::findOrFail($id)->delete();
+
+        return redirect('/');
+    });
+
+
 });
