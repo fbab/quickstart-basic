@@ -13,7 +13,7 @@
                     @include('common.errors')
 
                     <!-- New Course Form -->
-                    <form action="{{ url('Course')}}" method="POST" class="form-horizontal">
+                    <form action="{{ url('course')}}" method="POST" class="form-horizontal">
                         {{ csrf_field() }}
 
                         <!-- Course Name -->
@@ -38,7 +38,7 @@
             </div>
 
             <!-- Current Courses -->
-            @if (count($Courses) > 0)
+            @if (count($courses) > 0)
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Current Courses
@@ -51,13 +51,13 @@
                                 <th>&nbsp;</th>
                             </thead>
                             <tbody>
-                                @foreach ($Courses as $Course)
+                                @foreach ($courses as $course)
                                     <tr>
-                                        <td class="table-text"><div>{{ $Course->name }}</div></td>
+                                        <td class="table-text"><div>{{ $course->name }}</div></td>
 
                                         <!-- Course Delete Button -->
                                         <td>
-                                            <form action="{{ url('Course/'.$Course->id) }}" method="POST">
+                                            <form action="{{ url('course/'.$course->id) }}" method="POST">
                                                 {{ csrf_field() }}
                                                 {{ method_field('DELETE') }}
 
