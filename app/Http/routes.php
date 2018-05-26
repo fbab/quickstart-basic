@@ -33,6 +33,9 @@ Route::group(['middleware' => ['web']], function () {
         ]);
     });
      
+    Route::get('/admindb', function () {
+     return Redirect::to('/admindb/index.php');     
+    });
     
     /**
      * Show Task Dashboard
