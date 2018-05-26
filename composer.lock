@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f4df141dd450a647c15a1bc07523e0c",
-    "content-hash": "fbc4dd47238e480e90091758ac9cf75f",
+    "hash": "085d695e4cc0731a916cdc9693c12a48",
+    "content-hash": "d64598c07f65e08244a9a0ce8693476e",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -521,6 +521,49 @@
             "time": "2018-05-07 08:44:23"
         },
         {
+            "name": "miroc/laravel-adminer",
+            "version": "4.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/miroc/Laravel-Adminer.git",
+                "reference": "d80c552dedd0311571b9b45d95a7fc438445e914"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/miroc/Laravel-Adminer/zipball/d80c552dedd0311571b9b45d95a7fc438445e914",
+                "reference": "d80c552dedd0311571b9b45d95a7fc438445e914",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Miroc\\LaravelAdminer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miroslav Svitok",
+                    "email": "mirosvitok@gmail.com"
+                }
+            ],
+            "description": "Adminer (by Jakub Vrana) wrapper for Laravel 5",
+            "keywords": [
+                "adminer",
+                "database",
+                "laravel5",
+                "management"
+            ],
+            "time": "2018-05-09 18:32:22"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.23.0",
             "source": {
@@ -740,53 +783,6 @@
                 "php"
             ],
             "time": "2016-09-16 12:04:44"
-        },
-        {
-            "name": "onecentlin/laravel-adminer",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/onecentlin/laravel-adminer.git",
-                "reference": "c123298497967b317d64e3cac69a2fa5dc67986f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/onecentlin/laravel-adminer/zipball/c123298497967b317d64e3cac69a2fa5dc67986f",
-                "reference": "c123298497967b317d64e3cac69a2fa5dc67986f",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "~5.0",
-                "illuminate/routing": "~5.0",
-                "illuminate/support": "~5.0",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Onecentlin\\Adminer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Winnie Lin",
-                    "email": "onecentlin@gmail.com"
-                }
-            ],
-            "description": "Laravel Adminer Database Manager",
-            "keywords": [
-                "adminer",
-                "database",
-                "laravel5",
-                "management",
-                "mysql",
-                "sqlite"
-            ],
-            "time": "2017-03-17 03:07:15"
         },
         {
             "name": "paragonie/random_compat",
@@ -2056,6 +2052,53 @@
                 "testing"
             ],
             "time": "2017-02-28 12:52:32"
+        },
+        {
+            "name": "onecentlin/laravel-adminer",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onecentlin/laravel-adminer.git",
+                "reference": "c123298497967b317d64e3cac69a2fa5dc67986f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onecentlin/laravel-adminer/zipball/c123298497967b317d64e3cac69a2fa5dc67986f",
+                "reference": "c123298497967b317d64e3cac69a2fa5dc67986f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.0",
+                "illuminate/routing": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Onecentlin\\Adminer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Winnie Lin",
+                    "email": "onecentlin@gmail.com"
+                }
+            ],
+            "description": "Laravel Adminer Database Manager",
+            "keywords": [
+                "adminer",
+                "database",
+                "laravel5",
+                "management",
+                "mysql",
+                "sqlite"
+            ],
+            "time": "2017-03-17 03:07:15"
         },
         {
             "name": "phpdocumentor/reflection-common",
