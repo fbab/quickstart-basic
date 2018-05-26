@@ -161,7 +161,7 @@ return [
          * Service Providers for FilRouge
          */
 
-        Onecentlin\Adminer\ServiceProvider::class,
+        // Onecentlin\Adminer\ServiceProvider::class,
 
     ],
 
