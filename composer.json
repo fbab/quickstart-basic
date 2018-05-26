@@ -7,6 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*"
+        "onecentlin/laravel-adminer": "~1.0"        
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -49,7 +50,5 @@
     "config": {
         "preferred-install": "dist"
     },
-    "require": {
-        "onecentlin/laravel-adminer": "~1.0"
-    }    
+
 }
