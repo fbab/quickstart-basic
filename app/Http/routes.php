@@ -26,16 +26,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::any('adminer', '\Miroc\LaravelAdminer\AdminerController@index');
      
     /**
-     * Show Course Dashboard
-     */
-    Route::get('/courses', function () {
-        return view('courses', [
-            'courses' => Course::orderBy('created_at', 'asc')->get()
-        ]);
-    });
-     
-   
-    /**
      * Show Task Dashboard
      */
     Route::get('/', function () {
@@ -97,5 +87,16 @@ Route::group(['middleware' => ['web']], function () {
         return redirect('/');
     });
 
+    /**
+     * Show Course Dashboard
+     */
+    Route::get('/courses', function () {
+        return view('courses', [
+            'courses' => Course::orderBy('created_at', 'asc')->get()
+        ]);
+    });
+     
+   
+     
 
 });
