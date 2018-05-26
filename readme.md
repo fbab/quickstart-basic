@@ -1,5 +1,5 @@
 # IMPORTANT
-Le dépôt officielle, source pour Classroom est dans : https://github.com/frederic-baucher/EXU9231 (c'est un dépôt natif, pas un fork, dans lequel on peut faire des recherche avec la barre de recherche github !)
+Le dépôt officiel, _assignment starter code_ pour [_Github's Classroom_](https://classroom.github.com/classrooms/17945014-umlp), est dans : https://github.com/frederic-baucher/EXU9231 (c'est un dépôt natif, pas un fork, dans lequel on peut faire des recherche avec la barre de recherche github !)
 Le [présent dépôt](https://github.com/fbab/quickstart-basic) est destiné aux tests pour préparer un beau EXU9231 !
 
 # BILAN
