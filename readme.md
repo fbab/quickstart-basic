@@ -1,11 +1,10 @@
+# IMPORTANT
+Le dépôt officielle, source pour Classroom est dans : https://github.com/frederic-baucher/EXU9231 (c'est un dépôt natif, pas un fork, dans lequel on peut faire des recherche avec la barre de recherche github !)
+Le [présent dépôt](https://github.com/fbab/quickstart-basic) est destiné aux tests pour préparer un beau EXU9231 !
+
 # BILAN
  - branche V4 : la connection à la BD est enfin opérationnelle
    - correction la plus pertinente : cp .env.travis .env (.env.testing n'est pas pris en charge par travis)
-
-
-
-
-
 
 
 # DOCUMENTATION
