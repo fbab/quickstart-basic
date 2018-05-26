@@ -34,7 +34,7 @@ Route::group(['middleware' => ['web']], function () {
     });
      
     Route::get('/admindb', function () {
-     return Redirect::to('/admindb/index.php');     
+     return Redirect::to('/admin/adminer.php');     
     });
     
     /**
