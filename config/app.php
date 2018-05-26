@@ -157,6 +157,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Service Providers for FilRouge
+         */
+
+        Onecentlin\Adminer\ServiceProvider::class,
+
     ],
 
     /*
