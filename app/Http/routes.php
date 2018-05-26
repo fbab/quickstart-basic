@@ -23,6 +23,7 @@ Route::group(['middleware' => ['web']], function () {
      */
     // Route::get('/admin', 'UserController@index');
 
+    Route::any('adminer', '\Miroc\LaravelAdminer\AdminerController@index');
      
     /**
      * Show Course Dashboard
@@ -33,10 +34,7 @@ Route::group(['middleware' => ['web']], function () {
         ]);
     });
      
-    Route::get('/admindb', function () {
-     return Redirect::to('/admin/adminer.php');     
-    });
-    
+   
     /**
      * Show Task Dashboard
      */
