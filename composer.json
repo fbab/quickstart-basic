@@ -48,5 +48,8 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "require": {
+        "onecentlin/laravel-adminer": "~1.0"
+    }    
 }
